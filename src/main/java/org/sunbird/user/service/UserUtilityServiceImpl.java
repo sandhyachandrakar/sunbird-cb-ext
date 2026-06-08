@@ -160,7 +160,6 @@ public class UserUtilityServiceImpl implements UserUtilityService {
 	@Override
 	public Map<String, Object> getUsersDataFromUserIds(List<String> userIds, List<String> fields, String authToken) {
 		Map<String, Object> result = new HashMap<>();
-		// request body
 		SunbirdApiRequest requestObj = new SunbirdApiRequest();
 		Map<String, Object> reqMap = new HashMap<>();
 		reqMap.put(Constants.FILTERS, new HashMap<String, Object>() {
